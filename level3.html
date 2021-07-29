@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animation</title>
+    <style>
+        body{
+            background-color: khaki;
+          color: black;
+          font-size: 30px;
+        }
+        #div1{
+          background-color: khaki;
+          height: 200px;
+          width: 200px;
+          border: solid blue 10px;
+          animation-name: demo;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-delay: 3s;
+          animation-direction: normal;
+          position: relative;
+        }
+        @keyframes demo{
+          0%{background-color: lime;left:0px;top:0px;}
+          25%{background-color: orange;left:500px;top:200px;}
+          50%{background-color: orangered;left:500px;top:0px;}
+          75%{background-color: red;left:200px;top:0px;}
+          100%{background-color: black;left:100px;top:78px;}
+         
+        }
+    </style>
+</head>
+<body>
+    <h1>Click on the box</h1>
+    
+    
+    <div id="div1">
+   
+
+    </div>
+</body>
+</html>
+
